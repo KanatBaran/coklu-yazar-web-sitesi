@@ -1,0 +1,809 @@
+/*
+body {
+  font-family: 'Roboto', sans-serif !important; 
+}
+  */
+/* YAZILAR (START) */
+
+/* Logo Yazisi */
+.Logo {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ust menu yazisi */
+.menuBaslik {
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* YAZILAR (END) */
+
+/* MAIN MENU (START) */
+/* Dropdown menüsünü hover ile açılır yapar */
+.kategoriler-hover:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  right: 0; /* Menüyü sağ hizalayarak ekran dışına taşmasını engeller */
+}
+.kategoriler-hover .dropdown-menu {
+  margin-top: 0; /* Menü hizasını düzgün ayarlamak için */
+}
+/* MAIN MENU (END) */
+
+/* SEARCH BAR (START) */
+.search-bar {
+  background-color: #f8f9fa;
+  /* Arka plan rengi */
+  border-radius: 50px;
+  /* Oval tasarım */
+  padding: 3px 10px;
+  /* iç boşluk */
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  /* Alanı genişlet */
+  max-width: 250px;
+  /* genişlik */
+  border: 1px solid #e0e0e0;
+  /* Hafif dış kenar */
+  height: 36px;
+  /* Çubuğun yüksekliğini ayarla */
+}
+
+.search-icon {
+  font-size: 1rem;
+  /* ikon boyutu */
+  color: #6c757d;
+  /* İkon rengi */
+}
+
+.search-bar input {
+  background-color: transparent;
+  /* Şeffaf arka plan */
+  border: none;
+  /* Kenarlık kaldırıldı */
+  outline: none;
+  /* Varsayılan mavi çerçeveyi kaldırır */
+  box-shadow: none;
+  /* Focus gölgesini kaldırır */
+  font-size: 16px;
+  /* Yazı boyutunu küçült */
+  font-weight: 100;
+  /* Yazı kalınlığı */
+  line-height: 1.2;
+  /* Satır yüksekliği */
+  height: 100%;
+  /* Input yüksekliğini ayarla */
+  color: #000;
+  /* Yazı rengi */
+}
+
+.search-bar input:focus {
+  background-color: transparent;
+  /* Focus durumunda arka plan rengini kaldırır */
+  outline: none;
+  /* Varsayılan mavi çerçeveyi kaldırır */
+  box-shadow: none;
+  /* Focus gölgesini kaldırır */
+  border: none;
+  /* Ek kenarlıkları kaldırır */
+}
+
+.search-bar input::placeholder {
+  color: #6c757d;
+  /* Placeholder rengi */
+}
+
+/* SEARCH BAR (END) */
+
+/* DISCOVER TAB MENU (START) */
+/* Aktif sekmeye siyah alt çizgi ve kalın yazı */
+.nav-tabs .nav-link.active {
+  border-bottom: 1px solid #000;
+  /* Siyah alt çizgi */
+  font-weight: normal;
+  /* Aktif sekme için kalın yazı */
+  color: #000 !important;
+  /* Yazı rengini siyah yap */
+  background-color: transparent;
+  /* Varsayılan arka planı kaldır */
+
+}
+
+/* Pasif sekmeler */
+.nav-tabs .nav-link {
+  border: none;
+  /* Kenarlıkları kaldır */
+  color: #6c757d;
+  /* Pasif sekme yazı rengi (gri) */
+  background-color: transparent;
+  /* Arka planı kaldır */
+  font-weight: normal;
+  /* Normal yazı */
+  font-family: 'WorkSans', sans-serif;
+  font-size: 14px;
+}
+
+/* Hover efekti */
+.nav-tabs .nav-link:hover {
+  color: grey;
+  /* Hover sırasında yazı rengini siyah yap */
+  border-bottom: 1px solid;
+  /* Hover sırasında alt çizgi (açık gri) */
+  font-weight: normal;
+}
+
+/* Sekmelerin geçiş animasyonu */
+.tab-pane {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* DISCOVER TAB MENU (END) */
+
+/* DISCOVER CARD (START) */
+.cardYazar {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardBaslik {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cardBaslik a {
+  color: inherit;
+  /* Varsayılan metin rengini kullan */
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+}
+
+.cardicerik {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cardDetay {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+/* DISCOVER CARD (END) */
+
+
+/* SAG COL DISCOVER KATEGORILER (START) */
+.kategorilerBaslik {
+  font-weight: bold;
+}
+
+.kategorilerButon {
+  font-size: 12px;
+  background-color: #F2F2F2;
+  color: #000;
+  border: none;
+  /* Varsayılan kenarlık varsa kaldırılır */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Hover efekti için geçiş */
+  font-family: 'Inter', sans-serif;
+}
+
+.kategorilerButon:hover {
+  background-color: #e0e0e0;
+  /* Hover durumunda daha koyu bir gri */
+  color: #000;
+}
+
+/* SAG COL DISCOVER KATEGORILER (END) */
+
+/* SAG COL DISCOVER POPULER YAZARLAR (START) */
+.list-group-item {
+  border: none;
+  /* Tüm kenar çizgilerini kaldırır */
+  padding: 10px 0;
+  /* Üst ve alt boşlukları isteğe göre düzenleyebilirsiniz */
+}
+
+.list-group-item button {
+  background-color: transparent;
+  /* Transparan arka plan */
+  color: #000;
+  /* Siyah yazı rengi */
+  border: 1px solid #000;
+  /* Siyah kenarlık */
+  border-radius: 50px;
+  /* Oval şekil */
+  padding: 5px 15px;
+  /* Buton boyutları için iç boşluk */
+  transition: all 0.3s ease;
+  /* Hover efekti için geçiş */
+}
+
+.list-group-item button:hover {
+  background-color: #000;
+  /* Hover durumunda siyah arka plan */
+  color: #fff;
+  /* Yazı rengi beyaz */
+}
+
+.populerYazarlarGoruntule {
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  border-color: black;
+  border-radius: 30px;
+}
+
+.populerYazarlarGoruntule:hover {
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  border-color: black;
+  border-radius: 30px;
+  background-color: black;
+}
+
+/* SAG COL DISCOVER POPULER YAZARLAR (END) */
+
+/* SAG COL POST (START) */
+.postBaslik {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.author-info {
+  font-size: 0.9rem;
+  /* Daha küçük bir yazı boyutu */
+}
+
+.author-img {
+  width: 40px;
+  /* Resim genişliği */
+  height: 40px;
+  /* Resim yüksekliği */
+  object-fit: cover;
+  /* Resim kırpılması */
+}
+
+.author-name {
+  color: #000;
+  /* Siyah metin */
+  font-family: 'Inter', sans-serif;
+}
+
+.follow-link {
+  font-size: 0.9rem;
+  /* Follow butonu yazı boyutu */
+  text-decoration: none;
+  /* Alt çizgi olmadan */
+}
+
+.author-meta {
+  font-size: 0.85rem;
+  /* Meta bilgileri için yazı boyutu */
+  font-family: 'Inter', sans-serif;
+}
+
+.author-meta a {
+  color: #000;
+  /* Linkler için siyah renk */
+  text-decoration: none;
+  /* Alt çizgi olmadan */
+}
+
+.author-meta a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgi */
+}
+
+.author-info .text-success {
+  color: #28a745;
+  /* Follow bağlantısı için Bootstrap'in text-success rengi */
+}
+
+.icons-section {
+  /*border-top: 1px solid #ddd; /* Üst çizgi */
+  padding-top: 10px;
+  /* Çizgi ile ikonlar arasında boşluk */
+  font-size: 13px;
+  /* İkon boyutları */
+  color: #666;
+  /* İkon rengi */
+  font-family: 'Inter', sans-serif;
+}
+
+.icons-section i {
+  cursor: pointer;
+  /* Tıklanabilir ikon görünümü */
+  transition: color 0.3s ease;
+  /* Hover efekti */
+}
+
+.icons-section i:hover {
+  color: #000;
+  /* Hover durumunda siyah renk */
+}
+
+.postIcerik {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* SAG COL POST (END) */
+
+/* LOGIN & REGISTER (START) */
+.loginBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.loginFormContainer {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.loginFormTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loginFormText {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.loginFormControl {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 4px;
+  height: 48px;
+  padding-left: 15px;
+}
+
+.loginFormControl:focus {
+  box-shadow: none;
+  border-color: #6c757d;
+}
+
+.loginButton {
+  background-color: black;
+  border: none;
+  height: 48px;
+  border-radius: 24px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.loginButton:hover {
+  background-color: #333;
+}
+
+.loginFooterText {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.loginFormText a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.loginFormText a:hover {
+  text-decoration: underline;
+}
+
+/* LOGIN & REGISTER (END) */
+
+/* PROFIL (START) */
+.profilAuthor {
+  font-family: 'Inter', sans-serif;
+}
+
+.profilCard {
+  border: none;
+  box-shadow: none;
+}
+
+.profilSocialIcon {
+  font-size: 18px;
+  color: grey;
+}
+
+.profilSocialIcon:hover {
+  color: black;
+}
+
+.profilEndArticle {
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profilEndArticleDate {
+  padding-left: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 12 px;
+}
+
+.profilUserEdit {
+  font-size: 18px;
+  color: grey;
+}
+
+.profilUserEdit:hover {
+  color: black;
+}
+
+.profilNavTabs {
+  width: 100%;
+  /* Tab menüsünün genişliğini tam satıra yayar */
+}
+
+.profilAddPost {
+  border-bottom: 1px solid #DEE2E6;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.profilEditButon {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+/* PROFIL (END) */
+
+/* PROFIL EDIT (START) */
+.profilEdit .list-group-item {
+  padding-left: 5px;
+  border-left: 1px solid transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.profilEdit .list-group-item.active {
+  background-color: transparent;
+  /* Gri ve transparan */
+  color: #000;
+  /* Metin rengi siyah */
+  border-left: 1px solid black;
+}
+
+.profilEdit .list-group-item:hover {
+  background-color: transparent;
+  border-left: 1px solid grey;
+}
+
+.profilEditUpdateButon {
+  background-color: black;
+  border: none;
+  height: 30px;
+  border-radius: 24px;
+  font-size: 16px;
+  color: white;
+  width: 20%;
+}
+
+#bildirimler .form-label {
+  font-size: 1rem;
+  /* Yazı boyutunu ayarla */
+}
+
+#bildirimler .form-check-input {
+  transform: scale(1.2);
+  /* Toggle boyutunu büyüt */
+}
+
+#bildirimler .form-check-input:checked {
+  background-color: black;
+  /* Arka plan rengini siyah yapar */
+  border-color: black;
+  /* Çerçeve rengini siyah yapar */
+}
+
+.profilEditDipNot {
+  font-size: 10px;
+  color: grey;
+}
+
+/* PROFIL EDIT (END) */
+
+/* SEARCH (START) */
+.searchInput {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 4px;
+  height: 48px;
+  padding-left: 15px;
+  width: 75%;
+}
+
+.searchInput:focus {
+  box-shadow: none;
+  border-color: #6c757d;
+  background-color: #f7f7f7;
+}
+
+.searchInput:hover{
+  background-color: #f7f7f7;
+}
+
+/* Buton arkaplanını siyah yap */
+.search .btn-primary {
+  background-color: black !important;
+  /* Siyah arka plan */
+  border-color: black !important;
+  /* Siyah kenar */
+}
+
+/* Buton üzerine gelindiğinde (hover) siyah kalması için */
+.search .btn-primary:hover {
+  background-color: #333 !important;
+  /* Daha açık bir siyah (isteğe bağlı) */
+  border-color: #333 !important;
+}
+
+/* Buton tıklanma efekti (focus veya active) */
+.search .btn-primary:focus,
+.btn-primary:active {
+  background-color: black !important;
+  border-color: black !important;
+  box-shadow: none !important;
+  /* Varsayılan Bootstrap gölgesini kaldır */
+}
+
+/* SEARCH (END) */
+
+
+/* CATEGORY (START) */
+.categoryBaslik{
+  font-weight: bold;
+  font-size: 24px;
+}
+/* CATEGORY (END) */
+
+/* FOOTER (START) */
+footer .bi {
+  transition: color 0.3s;
+}
+footer .bi:hover {
+  color: #007bff; /* Mavi tonlu hover efekti */
+}
+/* FOOTER (END) */
+
+/* POST.PHP (START) */
+.postIcerik h1, 
+.postIcerik h2, 
+.postIcerik h3, 
+.postIcerik h4, 
+.postIcerik h5, 
+.postIcerik h6 {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: bold; 
+  color: #333; 
+}
+
+.postIcerik h1 {
+  font-size: 36px; 
+}
+
+.postIcerik h2 {
+  font-size: 30px; 
+}
+
+.postIcerik h3 {
+  font-size: 24px; 
+}
+
+.postIcerik h4 {
+  font-size: 20px; 
+}
+
+.postIcerik h5 {
+  font-size: 18px; 
+}
+
+.postIcerik h6 {
+  font-size: 16px; 
+}
+
+/* Blockquote etiketinin tasarımı */
+.postIcerik blockquote {
+  font-style: italic; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 18px; 
+  color: #555; 
+  border-left: 4px solid #ccc; 
+  padding-left: 15px; 
+  margin: 20px 0; 
+  background-color: #f9f9f9; 
+  border-radius: 4px; 
+}
+
+/* Code etiketinin tasarımı */
+.postIcerik code {
+  font-family: 'Courier New', monospace; 
+  font-size: 16px; 
+  color: #d63384; 
+  background-color: #f1f1f1; 
+  padding: 4px 6px; 
+  border-radius: 4px; 
+  display: inline-block; 
+  white-space: pre-wrap; 
+}
+
+.postIcerik pre code {
+  display: block; 
+  padding: 16px; 
+  background-color: #272822; 
+  color: #f8f8f2; 
+  border-radius: 6px; 
+  overflow-x: auto; 
+  font-size: 14px; 
+}
+/* POST.PHP (END) */
+
+/* COMMENT (POST.PHP) (START) */
+/* Yorumlar Bölümünün Genel Tasarımı */
+.comments-section {
+  /*background-color: #f9f9f9;*/
+  border-radius: 10px;
+/*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Yorum Gönderme Formu */
+.comment-form {
+  background-color: #F8F9FA;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form textarea {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.comment-form textarea:hover {
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.comment-form textarea:focus {
+  border-color: black !important; /* Varsayılan border rengini korur */
+  box-shadow: none !important; /* Box shadow'ı kaldırır */
+  border: 2px solid black;
+}
+
+
+
+.comment-form button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: black;
+}
+
+/* Yorumlar */
+.comment {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.comment:hover {
+  /*transform: scale(1.02);*/
+}
+
+/* Yorum Başlık */
+.comment-author {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Yorum Tarihi */
+.comment-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Yorum İçeriği */
+.comment-content {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Kullanıcı Resmi */
+.comment-user-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Yorumlara Gölgeleme ve Düzgün Kenarlık */
+.comment-date, .comment-content {
+  margin-bottom: 10px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 767px) {
+  .comment-form textarea {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .comment-form button {
+      padding: 6px 12px;
+  }
+
+  .comment {
+      padding: 15px;
+  }
+}
+
+.trash{
+  font-size: 15px; 
+  color: grey;
+}
+/* COMMENT (POST.PHP) (END) */
+
+/* SON YORUMLAR (START) */
+.discoverEndComment {
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* SON YORUMLAR (END) */
