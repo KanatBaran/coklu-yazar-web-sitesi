@@ -28,7 +28,7 @@ BilgiDemi’nin amacı, üniversite öğrencileri başta olmak üzere tüm tekno
 Bu yapı, içerik keşfini kolaylaştırır, topluluk etkileşimini artırır ve öğrenme süreçlerini hızlandırır.
 
 
-## 🗂️ Klasör Yapısı
+## Klasör Yapısı
 ```
 BilgiDemi/
 ├─ index.php # Uygulama giriş noktası
@@ -112,4 +112,4 @@ BilgiDemi/
 - **Baran Kanat**  
   – Necmettin Erbakan Üniversitesi  
   – Web Programlama Dersi Bitirme Projesi  
-- 📫 [LinkedIn](https://www.linkedin.com/in/baran-kanat)  
+- [LinkedIn](https://www.linkedin.com/in/baran-kanat)  
